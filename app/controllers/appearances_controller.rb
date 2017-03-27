@@ -1,6 +1,7 @@
 class AppearancesController < ApplicationController
   before_action :require_login
 
+
   def new
     @appearance = Appearance.new
   end
