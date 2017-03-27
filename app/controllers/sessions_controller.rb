@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to episodes_path
     else
+      flash[:notice] = "Incorrect Username/Password"
       redirect_to login_path
     end
   end
